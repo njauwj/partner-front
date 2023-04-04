@@ -3,9 +3,10 @@ import axios, {AxiosInstance} from "axios";
 const isDev = process.env.NODE_ENV === 'development';
 
 const myAxios: AxiosInstance = axios.create({
-    baseURL: isDev ? 'http://localhost:8090/api' : 'https://partner-backed-38317-8-1317422184.sh.run.tcloudbase.com',
+    baseURL: isDev ? 'http://localhost:8090/api' : 'http://1.15.145.217:8090/api',
 });
 
+//请求时携带cookie
 myAxios.defaults.withCredentials = true; // 配置为true
 
 // Add a request interceptor

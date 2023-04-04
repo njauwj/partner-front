@@ -78,7 +78,6 @@
             tempParentTag.children = tempChildren.filter(item => item.text.includes(searchText.value));
             return tempParentTag;
         });
-
     }
     const onCancel = () => {
         searchText.value = '';

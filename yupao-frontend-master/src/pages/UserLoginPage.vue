@@ -22,6 +22,7 @@
         提交
       </van-button>
     </div>
+    <van-cell title="" to="/user/register" value="还没有账号？注册"></van-cell>
   </van-form>
 </template>
 
